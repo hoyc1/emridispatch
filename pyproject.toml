@@ -21,9 +21,15 @@ dependencies = [
 impulse = ["impulse-mcmc"]
 eryn = ["eryn"]
 # TDI / waveform / PSD response via lisa-analysis-tools + FastEMRIWaveforms.
-lisatools = ["lisaanalysistools", "fastemriwaveforms"]
+lisatools = [
+    "gpubackendtools @ git+https://github.com/thompsonphys/GPUBackendTools@spline",
+    "lisaanalysistools @ git+https://github.com/thompsonphys/lisa-analysis-tools.git@dev",
+    "fastemriwaveforms",
+]
 # StableEMRIFisher for Fisher-matrix prior boxes / proposal covariances.
-fisher = ["stableemrifisher"]
+fisher = [
+    "stableemrifisher @ git+https://github.com/thompsonphys/StableEMRIFisher@main"
+]
 # GMM mode-jump proposal (impulse backend).
 gmm = ["scikit-learn"]
 # Chain diagnostics / P-P plots.

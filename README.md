@@ -44,7 +44,9 @@ not on PyPI in your environment, install them from their git sources first.
 Note: at the moment, compatability between [lisa-analysis-tools](https://github.com/lisa-analysis-tools/lisa-analysis-tools) (for TDI/response), 
 `StableEMRIFisher` (for Fisher) and [FastEMRIWaveforms](https://github.com/BlackHolePerturbationToolkit/FastEMRIWaveforms) (for the signal model)
 is unstable. I suggest installing the following code
-from my forks, where compatability with FEW v2.0.0 should be maintained for now:
+from my forks, where compatability with FEW v2.0.0 should be maintained for now.
+This will be done automatically when installing from source:
+
 ```
 https://github.com/thompsonphys/GPUBackendTools (spline branch)
 https://github.com/thompsonphys/lisa-analysis-tools (dev branch)

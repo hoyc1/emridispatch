@@ -20,8 +20,7 @@ runs:
     - name: Install conda dependencies
       shell: bash -el {0}
       run: |
-        conda install -y -c conda-forge --override-channels cxx-compiler pkgconfig openblas
-        conda install -y -c conda-forge --override-channels conda-forge/label/lapack_rc::liblapacke
+        conda install -y -c conda-forge --override-channels cxx-compiler pkgconfig conda-forge/label/lapack_rc::liblapacke
 
     - name: Install package
       shell: bash -el {0}

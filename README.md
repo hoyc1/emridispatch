@@ -20,9 +20,21 @@ spend all of your GPU resources on this).
 
 To install this package, we require several build dependencies due to our
 interaction with the `lisaanalysistools` package. Before installing
-`emridispatch` we need to install the following packages with conda,
+`emridispatch` we need to install the following packages,
 
 ```
+cxx-compiler
+pkgconfig
+blas-devel
+"libblas=*=*netlib"
+"libcblas=*=*netlib"
+"liblapack=*=*netlib"
+"liblapacke=*=*netlib"
+```
+
+This can be done with conda via:
+
+```bash
 conda install -y -c conda-forge --override-channels cxx-compiler pkgconfig blas-devel "libblas=*=*netlib" "libcblas=*=*netlib" "liblapack=*=*netlib" "liblapacke=*=*netlib"
 ```
 

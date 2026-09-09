@@ -7,7 +7,7 @@ name = "emridispatch"
 version = "0.1.0"
 description = "EMRI parameter estimation: modular PE pipeline with pluggable samplers, TDI/response backends, Fisher providers, and flexible priors"
 readme = "README.md"
-requires-python = ">=3.10"
+requires-python = ">=3.12"
 license = { text = "MIT" }
 authors = [{ name = "Jonathan Thompson" }]
 dependencies = [

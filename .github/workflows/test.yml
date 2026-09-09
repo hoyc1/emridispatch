@@ -5,13 +5,13 @@ permissions:
   packages: read
 
 on:
-  workflow_run:
-    workflows: [ Install ]
-    types: [ completed ]
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
 
 jobs:
   test:
-    if: ${{ github.event.workflow_run.conclusion == 'success' }}
     runs-on: ubuntu-latest
     defaults:
       run:
@@ -22,8 +22,6 @@ jobs:
 
     steps:
     - uses: actions/checkout@v4
-      with:
-        ref: ${{ github.event.workflow_run.head_sha }}
 
     - name: Install package on ${{ matrix.python-version }}
       uses: ./.github/actions/install

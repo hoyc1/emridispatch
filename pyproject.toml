@@ -38,7 +38,7 @@ results = ["h5py"]
 # Corner / 1D posterior plots from results files (emridispatch-plot).
 viz = ["h5py", "corner", "matplotlib"]
 dev = ["pytest"]
-all = ["emridispatch[impulse,eryn,lisatools,fisher,gmm,diagnostics,results,viz]"]
+all = ["emridispatch[impulse,eryn,lisatools,fisher,gmm,diagnostics,results,viz,dev]"]
 
 [project.scripts]
 emridisp = "emridispatch.cli:main"

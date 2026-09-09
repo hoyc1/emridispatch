@@ -15,6 +15,9 @@ on:
 jobs:
   install:
     runs-on: ubuntu-latest
+    defaults:
+      run:
+        shell: bash -el {0}
     strategy:
       matrix:
         python-version: ["3.12", "3.13"]

@@ -22,7 +22,6 @@ impulse = ["impulse-mcmc"]
 eryn = ["eryn"]
 # TDI / waveform / PSD response via lisa-analysis-tools + FastEMRIWaveforms.
 lisatools = [
-    "gpubackendtools @ git+https://github.com/thompsonphys/GPUBackendTools.git@spline",
     "lisaanalysistools @ git+https://github.com/thompsonphys/lisa-analysis-tools.git@dev",
     "fastemriwaveforms",
 ]

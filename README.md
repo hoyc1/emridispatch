@@ -25,7 +25,6 @@ interaction with the `lisaanalysistools` package. Before installing
 ```
 cxx-compiler
 pkgconfig
-blas-devel
 "libblas=*=*netlib"
 "libcblas=*=*netlib"
 "liblapack=*=*netlib"
